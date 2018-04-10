@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Elaborate Form</title>
+</head>
+
+<body>
+    <h1>Submit stuff we'll definitely look at!</h1>
+    <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+        <fieldset id="info">
+            <legend>Your info</legend>
+            <p>
+                <label for="name">Name: </label>
+                <input type="text" name="name" autofocus>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" multiple>
+            </p>
+            <p>
+                <label for="cell">Cell: </label>
+                <input type="tel" name="cell">
+            </p>
+            <p>
+                <label for="homepage">Homepage: </label>
+                <input type="url" name="homepage">
+            </p>
+            <p>
+                <label for="plan">Plan: </label>
+                <input type="text" name="plan" value="Super-Duper Member" disabled>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>What's the best way to contact you?</legend>
+            <p>
+                <input type="radio" name="communication" value="phone">
+                <label for="phone">Phone</label>
+                <input type="radio" name="communication" value="email">
+                <label for="email">Email</label>
+                <input type="radio" name="communication" value="owl">
+                <label for="owl">Owl</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>What devices do you use with our site?</legend>
+            <p>
+                <input type="checkbox" name="device" value="ios">
+                <label for="ios">iOS</label>
+                <br />
+                <input type="checkbox" name="device" value="android">
+                <label for="android">Android</label>
+                <br />
+                <input type="checkbox" name="device" value="mac">
+                <label for="mac">Mac</label>
+                <br />
+                <input type="checkbox" name="device" value="windows">
+                <label for="windows">Windows</label>
+                <br />
+                <input type="checkbox" name="device" value="linux">
+                <label for="linux">Linux</label>
+                <br />
+                <input type="checkbox" name="device" value="other">
+                <label for="other">Other </label>
+                <input type="text" name="other">
+                <br />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <p>
+                <label for="type">Type: </label>
+                <select name="type">
+                    <option value="feedback">Feedback</option>
+                    <option value="bug">Reporting a bug</option>
+                    <option value="question">Question</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                <textarea></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Your favorite color</legend>
+            <p>
+                <label for="color">Pick: </label>
+                <input type="color" name="color">
+            </p>
+            <p>
+                <label for="file">PDF as to why: </label>
+                <input type="file" name="file" id="file" multiple>
+            </p>
+        </fieldset>
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Click here for free money</button>
+        </div>
+    </form>
+</body>
+
+</html>

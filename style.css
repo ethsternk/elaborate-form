@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240,240,240);
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(230, 230, 210);
+    padding: 15px;
+}
+
+fieldset {
+    margin: 0.5em;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#info label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    width: 100%;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
